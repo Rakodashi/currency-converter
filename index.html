@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <style>
+    .circle {
+      height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    }
+  </style>
   
   <div class="container">
     <h1 class="page-title">
@@ -17,65 +26,71 @@
     <!-- <p class="page-subtitle">
       Descubra os valores em real R$
     </p> -->
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-    
-    <label for="moeda">Insert the value & choose the coin to convert</label><br>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+
+    <h3>Insert the value & choose the coin to convert</h3>
 
     <div class="input-gifs">
       <img src="css/PN_Spinning_Coin.gif" class="coin-gif1" alt="">
 
       <label for="realValue">R$</label>
-      <input type="number"
-      name="realValue"
-      id="realValue"
-      class="input"
-      step="0.01"
-      min="0.00"
-      max="9999999999.99"
-      value=""
-      onclick=""
-      onchange=""
-      autofocus
-      required
-      size="2" />
+      <input 
+        type="number"
+        name="realValue"
+        id="realValue"
+        class="input"
+        step="0.01"
+        min="0.00"
+        max="9999999999.99"
+        value=""
+        tabindex='1'
+        onclick="activateBtn()"
+        onchange="activateBtn()"
+        autofocus
+        required
+         />
 
       <img src="css/PN_Spinning_Coin.gif" class="coin-gif2" alt="">
 
-      <div class="form-group">
+      <div class="container">
 
-        <input type="radio"
-        id="dollar"
-        name="otherCoin"
-        class="input radio"
-        value="Dollar"
-        tabindex="2"
+        <input
+          type="radio"
+          id="dollar"
+          name="otherCoin"
+          class="input radio"
+          value="Dollar"
+          tabindex="2"
         />
         <label for="dollar">Dollar</label>
 
-        <input type="radio"
-        id="euro"
-        name="otherCoin"
-        class="input radio"
-        value="Euro"
-        tabindex="3"
+        <input
+          type="radio"
+          id="euro"
+          name="otherCoin"
+          class="input radio"
+          value="Euro"
+          tabindex="3"
         />
         <label for="euro">Euro</label>
 
-        <input type="radio"
-        id="pound"
-        name="otherCoin"
-        class="input radio"
-        value="Pound"
-        tabindex="4"
+        <input
+          type="radio"
+          id="pound"
+          name="otherCoin"
+          class="input radio"
+          value="Pound"
+          tabindex="4"
         />
         <label for="pound">Pound</label>
         
-        <input type="radio"
-        id="bitcoin"
-        name="otherCoin"
-        class="input radio"
-        value="Bitcoin"
-        tabindex="4"
+        <input
+          type="radio"
+          id="bitcoin"
+          name="otherCoin"
+          class="input radio"
+          value="Bitcoin"
+          tabindex="4"
         />
         <label for="bitcoin">Bitcoin</label>
 
@@ -88,10 +103,12 @@
      </div>
 
     
-    <h2 id="valorConvertido"></h2>
+    <!-- <h2 id="valorConvertido"></h2> -->
   </div>
+
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
     <script src="./main.js"></script>
 </body>
 </html>
