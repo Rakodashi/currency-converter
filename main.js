@@ -15,7 +15,7 @@
 
 
 // Select input with the typed number
-let typedValue = document.querySelector('#valueReal')
+let typedValue = document.querySelector('#realValue')
 
 // Select the radio elements (make an array)
 let selectedCoin = document.getElementsByName('otherCoin')
