@@ -1,8 +1,9 @@
 body {
   font-family: "Roboto Mono", monospace;
+  font-weight: 600;
   min-height: 400px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-1-conversor-de-moedas.png");
-  background-color: #000000;
+  /* background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-1-conversor-de-moedas.png"); */
+  background-color: #e9cc3e;
   background-size: 100vh;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -11,22 +12,33 @@ body {
   flex-direction: column;
 }
 
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+
 .coin-gif1, .coin-gif2 {
   width: 50px;
 }
 
-.input-gifs {
-  display: inline-flex;
-}
 
 button {
   flex-direction: column;
 }
 
 .container {
+  /* display: flex;
+  flex-direction: column; */
   text-align: center;
   padding: 20px;
   height: 100vh;
+}
+
+.container img {
+margin-top: 1rem;
 }
 
 .page-title {
@@ -56,8 +68,11 @@ input {
   border-radius: 5px;
 }
 
-label {
-  color: white;
+label, h3 {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 2px 1px 4px #000;
+  
 }
 
 button {
@@ -67,7 +82,8 @@ button {
   background: #ffffff;
 }
 
-h2 {
-  color: #ffffff;
-  font-size: 30px;
+.page-title, h2 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 2px 1px 4px #000;
 }
