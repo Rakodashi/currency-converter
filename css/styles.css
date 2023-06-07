@@ -4,37 +4,43 @@ body {
   min-height: 400px;
   /* background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-1-conversor-de-moedas.png"); */
   background-color: #e9cc3e;
-  background-size: 100vh;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  place-self: center;
+  /* background-size: 100vh; */
+  /* background-position: center bottom; */
+  /* background-repeat: no-repeat; */
+  /* place-self: center; */
   display: flex;
   flex-direction: column;
 }
 
-.circle {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-  border-radius: 50%;
+* {
+  /* border: solid red 1px; */
 }
-
 
 .coin-gif1, .coin-gif2 {
   width: 50px;
 }
 
-
 button {
-  flex-direction: column;
+  margin: 0.5rem;
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  color: #fff;
+
+  border-radius: 10px;
+  /* background: #ffffff; */
+  background: #967c14;
+}
+
+main {
+  margin: 8rem 2rem;
 }
 
 .container {
-  /* display: flex;
-  flex-direction: column; */
+  /* margin: 1rem; */
   text-align: center;
-  padding: 20px;
-  height: 100vh;
+  /* padding: 20px; */
+  /* height: 100vh; */
 }
 
 .container img {
@@ -44,11 +50,11 @@ margin-top: 1rem;
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
+  /* margin-top:15%; */
 }
 
 .page-subtitle {
   color: #ffffff;
-  margin-top: 5px;
 }
 
 .page-logo {
@@ -68,21 +74,27 @@ input {
   border-radius: 5px;
 }
 
-label, h3 {
+label {
   font-size: 25px;
   color: #fff;
   text-shadow: 2px 1px 4px #000;
+  margin: 4rem 0;
   
 }
 
-button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #ffffff;
+h3 {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 2px 1px 4px #000;
 }
 
-.page-title, h2 {
+h1 {
+  font-size: 40px;
+  color: #fff;
+  /* text-shadow: 2px 1px 4px #000; */
+}
+
+h2 {
   font-size: 40px;
   color: #fff;
   text-shadow: 2px 1px 4px #000;
