@@ -1,19 +1,3 @@
-// function Convert() {
-//   var valorElemento = document.getElementById("valorReal");
-//   var valor = valorElemento.value;
-//   var valorEmDolarNumerico = parseFloat(valor);
-
-//   var valorEmReal = valorEmDolarNumerico * 5;
-//   console.log(valorEmReal);
-
-//   var elementoValorConvertido = document.getElementById("valorConvertido");
-//   var valorConvertido = "O resultado em real é R$ " + valorEmReal;
-//   elementoValorConvertido.innerHTML = valorConvertido;
-// }
-
-
-
-
 // Select input with the typed number
 let typedValue = document.querySelector('#realValue')
 
@@ -119,3 +103,10 @@ cleanBtn.addEventListener('click', function () {
   selectedCoin[2].checked = false
   selectedCoin[3].checked = false
 })
+
+// function coinSound(e) {
+//   const audio = document.querySelector(audio);
+//   if (!audio) return; // To stop if not under the right conditions
+//   audio.currentTime = 0; // Rewind to start
+//   audio.play();
+// }

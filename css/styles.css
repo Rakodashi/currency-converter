@@ -6,6 +6,7 @@ body {
   background-color: #e9cc3e;
   display: flex;
   flex-direction: column;
+  
 }
 
 * {
@@ -37,12 +38,14 @@ body {
   margin: 3rem;
 }
 
-.coin-gif1, .coin-gif2 {
+.coin-gif {
+  vertical-align: middle;
   width: 50px;
+  margin: 0;
 }
 
 button {
-  margin: 0.5rem;
+  margin: 1rem 0;
   width: 6rem;
   height: 2rem;
   font-size: 1rem;
@@ -59,10 +62,6 @@ main {
   text-align: center;
 }
 
-.container img {
-  margin-top: 1rem;
-}
-
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
@@ -74,7 +73,7 @@ main {
 
 .page-logo {
   width: 200px;
-  margin-bottom: 10%;
+  margin: 1rem 0;
 }
 
 .alura-logo {
@@ -91,11 +90,10 @@ input {
 }
 
 label {
+  vertical-align: middle;
   font-size: 25px;
   color: #fff;
   text-shadow: 2px 1px 2px #000;
-  margin: 4rem 0;
-  
 }
 
 h3 {
@@ -115,3 +113,19 @@ h2 {
   color: #fff;
   text-shadow: 2px 1px 2px #000;
 }
+
+
+@keyframes jump {
+  0% {transform: translate3d(0,0,0)
+    scale3d(1,1,1);}
+  40% {transform: translate3d(0,30%,0)
+    scale3d(.7,1.5,1);}
+  100% {transform: 
+    translate3d(0,100%,0)
+    scale3d(1.5,.7,1);}
+}
+
+/* .jump {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternative infinite;
+} */
